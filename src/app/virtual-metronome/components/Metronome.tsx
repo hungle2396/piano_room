@@ -62,7 +62,7 @@ const Metronome = ({
       // Clear the interval on component unmount to avoid memory leaks
       return () => clearInterval(interval);
     }
-  }, [animation, beatsNum, tempoNum, beatEmp, vol]);
+  }, [animation, beatsNum, tempoNum, beatEmp, vol, soundState]);
 
   const handleVol = (event: Event, value: number | number[]): void => {
     if (typeof value === "number") {
